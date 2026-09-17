@@ -20,17 +20,17 @@ export default function Navbar() {
         {/* Navigation */}
         <div className="flex h-14">
           <a
-            href="#home"
+            href="#heroSection"
             className="flex items-center border-l border-white/10 px-5 text-xs text-white/70 transition hover:text-white"
           >
             Home
           </a>
 
           <a
-            href="#about"
+            href="#SkillsSection"
             className="flex items-center border-l border-white/10 px-5 text-xs text-white/70 transition hover:text-white"
           >
-            About
+            Skills
           </a>
 
           <a
