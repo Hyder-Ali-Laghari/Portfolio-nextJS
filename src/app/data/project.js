@@ -80,9 +80,9 @@ const projects = [
     title: 'Startup AI',
     description:
       'An AI-powered application that generates startup names, pitches, audiences and landing pages from a business idea.',
-    image: '/projects/startup.png',
-    liveUrl: '#',
-    githubUrl: '#',
+    image: '/AI_StartupPreview.png',
+    liveUrl: 'https://pitchcrfating.netlify.app/',
+    githubUrl: 'https://github.com/Hyder-Ali-Laghari/PitchCraft',
     technologies: [
       {
         name: 'Next.js',

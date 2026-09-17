@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #0057ff;
+  --secondary: #8b5cf6;
 }
 
 /* app/globals.css */

@@ -1,3 +1,4 @@
+// components/SkillsSectionMobile.jsx
 'use client';
 
 import { 
@@ -23,7 +24,7 @@ const skillCategories = [
     title: 'Frontend & UI Libraries',
     skills: [
       { name: 'React.js', icon: FaReact, color: 'text-cyan-400' },
-      { name: 'Next.js', icon: SiNextdotjs, color: 'text-white' },
+      { name: 'Next.js', icon: SiNextdotjs, color: 'text-slate-900 dark:text-white' },
       { name: 'Redux', icon: SiRedux, color: 'text-purple-500' },
       { name: 'Tailwind', icon: SiTailwindcss, color: 'text-teal-400' },
       { name: 'Bootstrap', icon: FaBootstrap, color: 'text-purple-400' },
@@ -36,7 +37,7 @@ const skillCategories = [
     title: 'Backend & Cloud Services',
     skills: [
       { name: 'Node.js', icon: FaNodeJs, color: 'text-green-500' },
-      { name: 'Express', icon: SiExpress, color: 'text-gray-300' },
+      { name: 'Express', icon: SiExpress, color: 'text-slate-700 dark:text-gray-300' },
       { name: 'MongoDB', icon: SiMongodb, color: 'text-green-400' },
       { name: 'Firebase', icon: SiFirebase, color: 'text-yellow-500' },
       { name: 'Firestore', icon: SiFirebase, color: 'text-amber-500' },
@@ -56,16 +57,16 @@ const skillCategories = [
 
 export default function SkillsSectionMobile() {
   return (
-    <section id="SkillsSection" className="py-12 px-4 sm:px-6 max-w-5xl mx-auto">
-      <h2 className="text-2xl sm:text-3xl font-bold text-white mb-8 tracking-wide uppercase">
-        Skills & Technologies
+    <section id="SkillsSection" className="py-12 sm:px-6 max-w-5xl mx-auto transition-colors">
+      <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-slate-900 dark:text-white mb-8 transition-colors">
+        Skills & <span className="text-[#0057ff]">Technologies</span>
       </h2>
 
       <div className="space-y-8">
         {skillCategories.map((category, idx) => (
           <div key={idx} className="space-y-3">
-            <h3 className="text-xs sm:text-sm font-semibold text-slate-400 tracking-wider uppercase">
-              {category.title}
+            <h3 className="text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 transition-colors">
+              // {category.title}
             </h3>
 
             <div className="flex flex-wrap gap-2.5 sm:gap-3">
@@ -74,10 +75,10 @@ export default function SkillsSectionMobile() {
                 return (
                   <div
                     key={i}
-                    className="flex items-center gap-2.5 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl bg-[#111622] border border-slate-800/80 hover:border-[#0057FF] active:scale-95 transition-all cursor-default group shadow-sm"
+                    className="flex items-center gap-2.5 px-3.5 py-2 sm:px-4 sm:py-2.5 rounded-xl border border-slate-200 dark:border-slate-800/80 bg-slate-100 dark:bg-[#111622] hover:border-[#0057ff] dark:hover:border-[#0057ff] active:scale-95 transition-all cursor-default group shadow-sm"
                   >
                     <IconComponent className={`w-4 h-4 sm:w-5 sm:h-5 ${skill.color} transition-transform group-hover:scale-110`} />
-                    <span className="text-xs sm:text-sm font-medium text-slate-200 group-hover:text-white">
+                    <span className="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-200 group-hover:text-slate-950 dark:group-hover:text-white transition-colors">
                       {skill.name}
                     </span>
                   </div>

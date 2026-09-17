@@ -1,34 +1,8 @@
-'use client';
-
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
-export default function ProjectCard({ project, index }) {
-  // Alternate entrance direction based on index
-  const isEven = index % 2 === 0;
-
+export default function ProjectCardMobile({ project }) {
   return (
-    <motion.article 
-      initial={{ 
-        opacity: 0, 
-        x: isEven ? -200 : 200, 
-        scale: 0.85 
-      }}
-      whileInView={{ 
-        opacity: 1, 
-        x: 0, 
-        scale: 1 
-      }}
-      viewport={{ once: true, margin: '-20px' }}
-      transition={{
-  type: 'spring',
-  stiffness: 90,
-  damping: 18,
-  mass: 1,
-}}
-      whileHover={{ y: -4, x: -4 }}
-      className="group overflow-hidden border-4 border-black bg-[#f5f5f0] text-black shadow-[7px_7px_0_#0a0a0a] transition-all duration-200 hover:shadow-[11px_11px_0_#0057ff]"
-    >
+    <article className="group overflow-hidden border-4 border-black bg-[#f5f5f0] text-black shadow-[7px_7px_0_#0a0a0a] transition-all duration-200 hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[11px_11px_0_#0057ff]">
 
       {/* Project Preview */}
       <div className="relative h-52 overflow-hidden border-b-4 border-black bg-[#050610]">
@@ -94,6 +68,6 @@ export default function ProjectCard({ project, index }) {
         </a>
       </div>
 
-    </motion.article>
+    </article>
   );
 }
