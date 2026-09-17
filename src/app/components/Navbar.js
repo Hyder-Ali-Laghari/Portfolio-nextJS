@@ -1,6 +1,7 @@
 import FloatingCTA from "./FloatingCTA";
 
 export default function Navbar() {
+ 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full px-4 pt-5">
       <div className="mx-auto flex max-w-7xl items-center border border-white/10 bg-white/5 backdrop-blur-md">

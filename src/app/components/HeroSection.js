@@ -58,13 +58,13 @@ export default function HeroSection() {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="flex flex-wrap gap-4"
       >
-        {/* <a 
+        <a 
           href="#projects" 
           className="px-6 py-3 rounded-xl bg-[#0057FF] text-white font-medium hover:opacity-90 active:scale-95 transition-all shadow-lg shadow-[#0057FF]/25"
         >
           View Projects
         </a>
-        <a 
+        {/* <a 
           href="#contact" 
           className="px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 font-medium hover:bg-slate-800 hover:text-white active:scale-95 transition-all"
         >
