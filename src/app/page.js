@@ -15,7 +15,8 @@ export default function Home() {
       <Navbar />
       <div></div>
       <HeroSection />
-      <SkillsSection/>
+      
+      {/* <SkillsSection/> */}
       <Projects/>
     </div>
   );

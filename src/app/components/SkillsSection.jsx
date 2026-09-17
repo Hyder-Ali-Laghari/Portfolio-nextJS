@@ -86,7 +86,7 @@ const slideLeftToRight = {
 
 export default function SkillsSection() {
   return (
-    <section id='SkillsSection' className="py-16 max-w-5xl mx-8 px-4 overflow-hidden">
+    <section id='SkillsSection' className=" mx-[-8] py-6 mt-20 max-w-5xl  px-4 overflow-hidden">
       <motion.h2 
         initial={{ opacity: 0, x: -30 }}
         whileInView={{ opacity: 1, x: 0 }}

@@ -2,6 +2,9 @@
 // 'use client';
 // import { motion } from 'framer-motion';
 
+import SkillsSection from "./SkillsSection";
+import SkillsSectionMobile from "./SkillsSectionMobile";
+
 // export default function HeroSection() {
 //   return (
 //     <section id='heroSection' className="relative min-h-[80vh] flex flex-col justify-center items-start max-w-4xl mx-4 sm:mx-8 mt-16 sm:mt-20 py-12 sm:py-20 px-4">
@@ -74,7 +77,7 @@ export default function HeroSection() {
   return (
     <section
       id="heroSection"
-      className="relative mx-4  flex min-h-[70vh] sm:min-h-[80vh] max-w-4xl flex-col items-start justify-center px-4 py-12 sm:mx-8 sm:mt-2 sm:py-20"
+      className="relative mx-4 mt-28 flex min-h-[70vh] sm:min-h-[80vh] max-w-4xl flex-col items-start justify-center px-4 py-12 sm:mx-8 sm:mt-2 sm:py-20"
     >
       {/* Small Eyebrow Badge */}
       <div className="animate-fade-up mt-0 md:mt-20 mb-6 inline-flex items-center gap-2 rounded-full border border-slate-800 bg-slate-900 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-slate-300">
@@ -113,6 +116,15 @@ export default function HeroSection() {
           View Projects
         </a>
       </div>
+      <div className="hidden md:block">
+        <SkillsSection/>
+
+      </div>
+
+      <div className="block md:hidden">
+        <SkillsSectionMobile/>
+      </div>
+
     </section>
   );
 }
