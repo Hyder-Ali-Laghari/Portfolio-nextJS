@@ -1,54 +1,35 @@
 const projects = [
-  {
+  
+   {
     id: 1,
-    title: 'Decider',
+    title: 'Startup AI',
     description:
-      'A random decision-making app with an animated card spinner that helps you choose between multiple options.',
-    image: '/projects/decider.png',
-    liveUrl: '#',
-    githubUrl: '#',
+      'An AI-powered application that generates startup names, pitches, audiences and landing pages from a business idea.',
+    image: '/AI_StartupPreview.png',
+    liveUrl: 'https://pitchcrfating.netlify.app/',
+    githubUrl: 'https://github.com/Hyder-Ali-Laghari/PitchCraft',
     technologies: [
+      {
+        name: 'Next.js',
+        icon: 'N',
+      },
       {
         name: 'React',
         icon: '⚛',
       },
       {
-        name: 'JavaScript',
-        icon: 'JS',
-      },
-      {
-        name: 'Tailwind',
-        icon: 'TW',
+        name: 'AI',
+        icon: '✦',
       },
     ],
   },
+  
+  
+
+  
 
   {
     id: 2,
-    title: 'Weather App',
-    description:
-      'A weather application that fetches live weather data and dynamically changes its appearance based on current conditions.',
-    image: '/projects/weather.png',
-    liveUrl: '#',
-    githubUrl: '#',
-    technologies: [
-      {
-        name: 'React',
-        icon: '⚛',
-      },
-      {
-        name: 'JavaScript',
-        icon: 'JS',
-      },
-      {
-        name: 'API',
-        icon: 'API',
-      },
-    ],
-  },
-
-  {
-    id: 3,
     title: 'MERN Notes',
     description:
       'A full-stack notes application with authentication, protected routes and persistent MongoDB storage.',
@@ -75,38 +56,14 @@ const projects = [
     ],
   },
 
-  {
-    id: 4,
-    title: 'Startup AI',
+   {
+    id: 3,
+    title: 'Text and File Sharing App',
     description:
-      'An AI-powered application that generates startup names, pitches, audiences and landing pages from a business idea.',
-    image: '/AI_StartupPreview.png',
-    liveUrl: 'https://pitchcrfating.netlify.app/',
-    githubUrl: 'https://github.com/Hyder-Ali-Laghari/PitchCraft',
-    technologies: [
-      {
-        name: 'Next.js',
-        icon: 'N',
-      },
-      {
-        name: 'React',
-        icon: '⚛',
-      },
-      {
-        name: 'AI',
-        icon: '✦',
-      },
-    ],
-  },
-
-  {
-    id: 5,
-    title: 'Firebase Store',
-    description:
-      'A product management application with authentication and Firestore-powered product data.',
-    image: '/projects/store.png',
-    liveUrl: '#',
-    githubUrl: '#',
+      'Instantly share text and files across devices via temporary rooms without registering accounts.',
+    image: '/VillageNoticeBoard.png',
+    liveUrl: 'https://village-notice-board.netlify.app/',
+    githubUrl: 'https://github.com/Hyder-Ali-Laghari/Village-NoticeBoard',
     technologies: [
       {
         name: 'React',
@@ -123,6 +80,57 @@ const projects = [
     ],
   },
 
+
+
+
+  {
+    id: 4,
+    title: 'Decider',
+    description:
+      'A random decision-making app with an animated card spinner that helps you choose between multiple options.',
+    image: '/projects/decider.png',
+    liveUrl: '#',
+    githubUrl: '#',
+    technologies: [
+      {
+        name: 'React',
+        icon: '⚛',
+      },
+      {
+        name: 'JavaScript',
+        icon: 'JS',
+      },
+      {
+        name: 'Tailwind',
+        icon: 'TW',
+      },
+    ],
+  },
+ 
+  {
+    id: 5,
+    title: 'Weather App',
+    description:
+      'A weather application that fetches live weather data and dynamically changes its appearance based on current conditions.',
+    image: '/projects/weather.png',
+    liveUrl: '#',
+    githubUrl: '#',
+    technologies: [
+      {
+        name: 'React',
+        icon: '⚛',
+      },
+      {
+        name: 'JavaScript',
+        icon: 'JS',
+      },
+      {
+        name: 'API',
+        icon: 'API',
+      },
+    ],
+  },
+ 
   {
     id: 6,
     title: 'Ramadan Countdown',

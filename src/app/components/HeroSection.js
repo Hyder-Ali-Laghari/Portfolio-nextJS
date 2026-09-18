@@ -45,7 +45,7 @@ export default function HeroSection() {
       <div className="animate-fade-up [animation-delay:400ms] flex flex-wrap gap-4">
         <a
           href="#projects"
-          className="rounded-xl bg-[var(--primary)] px-6 py-3 font-medium text-[var(--background)] shadow-lg shadow-[#0057FF]/25 transition-all hover:opacity-90 active:scale-95"
+          className="rounded-xl bg-[var(--primary)] px-6 py-3 font-medium text-[var(--foreground)] shadow-lg shadow-[#0057FF]/25 transition-all hover:opacity-90 active:scale-95"
         >
           View Projects
         </a>
